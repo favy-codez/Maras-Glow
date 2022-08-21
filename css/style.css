@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+hr{
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: #fff 1.5px;
+    border-style: inset;
+}
+
+/* header section */
+header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    padding: 2% 3%;
+}
+
+.nav{
+    display: flex;
+    color: rgb(39,153,52);
+    /* color: rgb(94, 88, 88); */
+    margin-right: 12%;
+}
+
+.nav h2{
+    line-height: 50px;
+}
+
+#logo{
+    width: 9%;
+    border-radius: 100%;
+    margin-right: 10px;
+    /* border: 2px solid rgb(39,153,52); */
+}
+
+.links ul{
+    display: flex;
+    list-style: none;
+    padding-top: 14px;
+}
+
+.links a{
+    padding: 0 15px;
+    text-decoration: none;
+    color: rgb(39,153,52);
+    /* color: rgb(94, 88, 88); */
+    font-size: 16px;
+    font-weight: 900;
+    
+}
+#contactButton{
+    background-color: rgb(39,153,52);
+    color:#fff;
+    padding: 10px 23px;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+
+/* beginnig of hero section */
+#herosection{
+    display: flex;
+    margin: 10% 0% 7% 0% ;
+    width: 100%;
+    /* background: url(/images/hero.jpg); */
+    background-size: cover;
+    padding: 5% 3%;
+}
+
+#heroImage{
+    width: 90%;
+    border-radius: 5%;
+    margin-left: 8%;
+}
+.heroA h2{
+    color: rgb(39,153,52);
+    font-size: 40px;
+    font-weight: 600;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.heroA p{
+    font-size: 20px;
+    font-weight: 400;
+    width: 53%;
+    text-align: left;
+}
+
+/* products section */
+#sectionTwo{
+    padding: 5% 8%;
+}
+
+#sectionTwo h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    color: rgb(39,153,52);
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 4rem;
+    grid-column-gap: 3rem;
+    text-align: center;
+}
+
+ .products h5{
+    margin-top: 3px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.products p{
+    margin-top: 8px;
+    font-size: 16px;
+} 
+
+.products img{
+    width: 70%;
+    border-radius: 4px;
+}
+
+.productOne{
+   box-shadow: 7px 7px 7px 7px rgb(230, 230, 230);
+   padding: 16px 20px 40px 20px;
+   /* background-color: rgb(39,153,52); */
+   background-color: #fff;
+   border-radius: 20px;
+}
+
+#productImg{
+    width: 95%;
+    height: 80%;
+}
+
+/*  contact Section*/
+#contactSection{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+#contactSection h2{
+    font-size: 35px;
+    font-weight: 800;
+    margin: 0 0  26px 0;
+    color: rgb(39,153,52);
+}
+
+input[type=text], input[type=email], textarea{
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;  
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+
+input[type=submit] {
+    background-color: rgb(39,153,52);
+    color: white;
+    padding: 12px 36px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 27%;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  #contactSection form{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* footer section */
+  #footer{
+    padding: 3rem 3.5rem;
+    display: flex;
+    gap: 42rem;
+  }
+
+  .footerA{
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+  }
+
+  .footerA h2{
+    color: rgb(39,153,52);
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  .footerA p{
+    font-size: 17px;
+    width: 120%;
+  }
+
+  .footerB{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footerB p{
+    color: rgb(39,153,52);
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .footerB img{
+    width: 30px;
+    background-color: white;
+    border-radius: 100%;
+  }
+
+  .footerMedia{
+    display: flex;
+    gap: 11px;
+    margin-left: 20px;
+  }
+
+  #mail{
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+  }
+  /* media query section */
+@media screen and (max-width:1200px) {
+    .footerA p{
+        width: 150%;
+    }
+    @media(max-width:992px){
+        .nav{
+            margin-right: -12%;
+        }
+        .footerA h2 {
+            width: 270%;
+        }
+        #footer{
+            gap: 24rem;
+        }
+        .footerA p {
+            width: 320%;
+            font-size: 22px;
+        }
+        #mail{
+            font-size: 22px;  
+        }
+        .footerMedia{
+            margin-left: 4rem;
+        }
+    }
+    @media(max-width:768px){
+        .nav{
+            margin-right: -31%;
+        }
+        .links a{
+            padding: 0 7px;
+        }
+        #contactButton{
+            margin-left: 8px;
+        }
+        .heroA h2{
+            font-size: 23px;
+        }
+        .heroA p{
+            font-size: 17px;
+            width: 75%;
+        }
+        .products {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        #footer{
+            gap: 20rem;
+        }
+        .footerA p{
+            font-size: 19px;
+            width: 150%;
+        }
+        #mail{
+            font-size: 19px;
+        }
+    }
+    @media(max-width:576px){
+        .nav h2{
+            font-size: 1.2em;
+        }
+        .nav{
+            margin-right: -230px;
+        }
+        #hide{
+            display: none;
+        }
+        .links a{
+            padding: 0 4px;
+        }
+        #contactButton{
+            margin-left: 0;
+        }
+        #herosection{
+            margin-top: 20%;
+            padding: 0 6%;
+        }
+        .heroA{
+            text-align: center;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+        .heroA h2{
+            width: 100%;
+        }
+        .heroA p{
+            margin-left: 12px;
+            width: 90%;
+            text-align: left;
+        }
+        #heroImage{
+            margin: 0;
+        }
+        #herosection{
+            flex-direction: column;
+        }
+        .products {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        #sectionTwo{
+            padding: 5% 4%;
+        }
+        #footer{
+            gap: 2rem;
+            flex-direction: column-reverse;
+        }
+        .footerA h2{
+            display: none;
+        }
+        .footerA p{
+            margin: 0 0 0 6rem;
+        }
+        .footerA{
+            gap: 2rem;
+        }
+        .footerMedia{
+            margin: 0 0 0 10rem;
+        }
+        #mail{
+            margin: 0 0 0 8rem;
+        }
+    }
+    @media(max-width:375px){
+        #logo{
+            width: 7%;
+            margin-right: 7px;
+        }
+        .nav{
+            margin-right: -400px;
+        }
+        .products {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .footerMedia{
+            margin: 0 0 0 3.5rem;
+        }
+        .footerA p{
+            margin: 0 0 0 -5px;
+        }
+        #mail{
+            margin: 0 0 0 2rem;
+        }
+    }
+    @media(max-width:300px){
+        #contactButton{
+            padding: 8px 14px;
+        }
+        .nav{
+            margin-right: -420px;
+        }
+        #herosection{
+            margin-top: 40%
+        }
+        .heroA p{
+            margin-left: 8px;
+            width: 102%;
+        }
+        #heroImage{
+            margin-left: 10px;
+        }
+        input[type=submit] {
+            margin-left: 16%;
+          }
+          #contactSection h2{
+            font-size: 23px;
+          }
+          .footerMedia{
+            margin: 0 0 0 1rem;
+        }
+        .footerA p{
+            margin: 0 0 0 1rem;
+            width: 90%;
+        }
+        #mail{
+            margin: 0 0 0 -1rem;
+        }
+    }
+    
