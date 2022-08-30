@@ -52,11 +52,15 @@ header{
     padding-top: 14px;
 }
 
+.links {
+    display: flex;
+}
+
 .links a{
     padding: 0 15px;
+    border-radius: 0 0 10px 0;
     text-decoration: none;
     color: rgb(39,153,52);
-    /* color: rgb(94, 88, 88); */
     font-size: 16px;
     font-weight: 900;
     
@@ -64,9 +68,9 @@ header{
 #contactButton{
     background-color: rgb(39,153,52);
     color:#fff;
-    padding: 10px 23px;
-    border-radius: 20px;
-    margin-left: 15px;
+    padding: 8px 10px;
+    border-radius: 0 0 10px 0;
+    font-size: 14px;
 }
 
 /* beginnig of hero section */
@@ -149,54 +153,23 @@ header{
     height: 80%;
 }
 
-/*  contact Section*/
-#contactSection{
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0;
+/*  review Section*/
+#reviews{
+    padding: 2rem 3rem;
+    margin: 2%  5% ;
+    position: relative;
+    z-index: -99;
+    height: 90%;
 }
 
-#contactSection h2{
+#reviews h2{
     font-size: 35px;
     font-weight: 800;
-    margin: 0 0  26px 0;
+    text-align: center;
+    margin-bottom: 5rem;
     color: rgb(39,153,52);
 }
 
-input[type=text], input[type=email], textarea{
-    width: 100%; 
-    padding: 12px;  
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box;  
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical 
-}
-
-input[type=submit] {
-    background-color: rgb(39,153,52);
-    color: white;
-    padding: 12px 36px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 27%;
-  }
-
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-
-  #contactSection form{
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  
   /* footer section */
   #footer{
     padding: 3rem 3.5rem;
@@ -219,7 +192,7 @@ input[type=submit] {
 
   .footerA p{
     font-size: 17px;
-    width: 120%;
+    width: 170%;
   }
 
   .footerB{
@@ -261,6 +234,9 @@ input[type=submit] {
         .nav{
             margin-right: -12%;
         }
+        .productOne{
+            padding: 16px 20px 80px 20px;
+        }
         .footerA h2 {
             width: 270%;
         }
@@ -280,7 +256,7 @@ input[type=submit] {
     }
     @media(max-width:768px){
         .nav{
-            margin-right: -31%;
+            margin-right: -35%;
         }
         .links a{
             padding: 0 7px;
@@ -303,7 +279,7 @@ input[type=submit] {
         }
         .footerA p{
             font-size: 19px;
-            width: 150%;
+            width: 320%;
         }
         #mail{
             font-size: 19px;
@@ -314,7 +290,8 @@ input[type=submit] {
             font-size: 1.2em;
         }
         .nav{
-            margin-right: -230px;
+            width: 140%;
+            margin-right: -350px;
         }
         #hide{
             display: none;
@@ -339,11 +316,11 @@ input[type=submit] {
         }
         .heroA p{
             margin-left: 12px;
-            width: 90%;
-            text-align: left;
+            width: 97%;
+            text-align: center;
         }
         #heroImage{
-            margin: 0;
+            margin: 0 auto;
         }
         #herosection{
             flex-direction: column;
@@ -354,6 +331,12 @@ input[type=submit] {
         #sectionTwo{
             padding: 5% 4%;
         }
+        #reviews{
+            padding: 1rem 0 2rem 0;
+        }
+        #reviews h2{
+            margin-bottom: 2rem;
+        }
         #footer{
             gap: 2rem;
             flex-direction: column-reverse;
@@ -362,43 +345,36 @@ input[type=submit] {
             display: none;
         }
         .footerA p{
-            margin: 0 0 0 6rem;
+            margin: 0 0 0 3rem;
+            width: 70%;
         }
         .footerA{
             gap: 2rem;
         }
         .footerMedia{
-            margin: 0 0 0 10rem;
+            margin: 0 0 0 9rem ;
+            width: 50%;
         }
         #mail{
-            margin: 0 0 0 8rem;
-        }
-    }
-    @media(max-width:576px){
-        .products {
-            grid-template-columns: repeat(1, 1fr);
-        }
-        .nav{
-            margin-right: -350px;
-        }
-        .footerMedia{
-            margin: 0 0 0 5rem;
-        }
-        #mail{
-            margin: 0 0 0 2.6rem;
-        }
-        .footerA p{
-            margin: 0 0 0 1rem;
-            width: 190%;
+            margin: 0 0 0 6rem;
         }
     }
     @media(max-width:375px){
         #logo{
-            width: 7%;
+            width: 10%;
+            height: 3rem;
             margin-right: 7px;
         }
         .nav{
-            margin-right: -400px;
+            margin-right: -260px;
+        }
+        .heroA p{
+            margin-left: 0;
+            text-align: left;
+            width: 99%;
+        }
+        #sectionTwo h2{
+            font-weight: 600;
         }
         .products {
             grid-template-columns: repeat(1, 1fr);
@@ -407,10 +383,11 @@ input[type=submit] {
             margin: 0 0 0 3.5rem;
         }
         .footerA p{
-            margin: 0 0 0 -5px;
+            margin: 0 0 0 -2rem;
+            width: 120%;
         }
         #mail{
-            margin: 0 0 0 2rem;
+            margin: 0 0 0 1rem;
         }
     }
     @media(max-width:300px){
@@ -418,7 +395,7 @@ input[type=submit] {
             padding: 8px 14px;
         }
         .nav{
-            margin-right: -420px;
+            margin-right: -220px;
         }
         #herosection{
             margin-top: 40%
@@ -445,6 +422,30 @@ input[type=submit] {
         }
         #mail{
             margin: 0 0 0 -1rem;
+        }
+    }
+    @media screen and (max-width:280px){
+        #logo{
+            width: 10%;
+            height: 3rem;
+            margin-right: 3px;
+        }
+        .nav{
+            margin-right: -215px;
+            padding: -8px -10px;
+        }
+        #sectionTwo h2{
+            font-size: 30px;
+        }
+        .heroA p{
+            width: 90%;
+            text-align: center;
+        }
+        #mail{
+            margin: 0 0 0 -2rem;
+        }
+        .footerA p{
+            width: 100%;
         }
     }
 }
