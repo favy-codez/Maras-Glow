@@ -222,7 +222,7 @@ header{
   .footerMedia{
     display: flex;
     gap: 11px;
-    margin-left: 20px;
+    margin-left: 33px;
   }
 
   #mail{
