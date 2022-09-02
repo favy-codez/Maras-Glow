@@ -364,6 +364,28 @@ header{
             margin: 0 0 0 6rem;
         }
     }
+    @media(max-width:412px){
+        .nav{
+            width: 140%;
+            margin-right: -280px;
+        }
+        #heroImage{
+            margin: 0 0 0 1rem;
+        }
+        .products {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .footerMedia{
+            margin: 0 0 0 5rem;
+        }
+        #mail{
+            margin: 0 0 0 2rem;
+        }
+        .footerA p{
+            width: 60%;
+            margin: 0 0 0 5rem;
+        }
+    }
     @media(max-width:375px){
         #logo{
             width: 10%;
