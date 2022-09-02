@@ -373,7 +373,7 @@ header{
             margin: 0 0 0 1rem;
         }
         .products {
-            grid-template-columns: repeat(1, 1fr);
+            grid-template-columns: repeat(2, 1fr);
         }
         .footerMedia{
             margin: 0 0 0 5rem;
