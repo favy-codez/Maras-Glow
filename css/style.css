@@ -27,7 +27,7 @@ header{
     justify-content: space-between;
     width: 100%;
     background-color: #fff;
-    padding: 2% 3%;
+    padding: 2% 5%;
 }
 
 .nav{
@@ -76,7 +76,7 @@ header{
     background-color: rgb(39,153,52);
     color:#fff;
     padding: 8px 10px;
-    border-radius: 0 0 10px 0;
+    border-radius: 10px 0 10px 0;
     font-size: 14px;
 }
 
