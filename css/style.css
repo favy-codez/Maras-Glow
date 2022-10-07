@@ -167,57 +167,10 @@ header{
     margin-bottom: 3rem;
     color: rgb(39,153,52);
 }
-/* want to practice js with caroussel */
-.carousel {
-    max-width: 600px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.carousel .carousel-item,
-.carousel .carousel-item-hidden {
-    display: none;
+span{
+    border-bottom:solid 2px rgb(39,153,52);
 }
-
-.carousel .carousel-item-visible {
-    display: block;
-}
-
-.carousel .carousel-item img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-}
-
-.carousel .carousel-actions {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.carousel .carousel-actions button {
-    border-radius: 50px;
-    background-color: white;
-    border: 0;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-}
-
-.carousel .carousel-actions button#carousel-button-prev {
-    margin-left: 20px;
-}
-
-.carousel .carousel-actions button#carousel-button-next {
-    margin-right: 20px;   
-}
-
 
 .carousel-inner{
     max-width: 500px;
@@ -229,7 +182,7 @@ header{
   #footer{
     padding: 3rem 3.5rem;
     display: flex;
-    gap: 42rem;
+    justify-content: space-between;
   }
 
   .footerA{
@@ -272,13 +225,13 @@ header{
   .footerMedia{
     display: flex;
     gap: 11px;
-    margin-left: 33px;
   }
 
   #mail{
     text-decoration: none;
     color: #000;
     font-size: 17px;
+    margin:0 auto;
   }
   /* media query section */
 @media screen and (max-width:1200px) {
