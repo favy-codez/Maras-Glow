@@ -54,10 +54,13 @@ header{
 
 .links {
     display: flex;
+    width: 360px;
+    justify-content: space-between;
 }
 
 .links a{
-    padding: 0 15px;
+    border-bottom:solid 1px rgb(39,153,52);
+    padding: 0 18px;
     border-radius: 0 0 10px 0;
     text-decoration: none;
     color: rgb(39,153,52);
@@ -210,7 +213,7 @@ span{
 
   .footerA p{
     font-size: 17px;
-    width: 170%;
+    width: 100%;
   }
 
   .footerB{
@@ -234,15 +237,21 @@ span{
 
   .footerMedia{
     display: flex;
-    gap: 11px;
+    justify-content: space-between;
   }
 
-  #mail{
+  .footerB img:hover{
+    background-color: rgb(39,153,52);
+    color:rgb(255, 255, 255);
+    transition: 1s;
+  }
+
+  /* #mail{
     text-decoration: none;
     color: #000;
     font-size: 17px;
     margin:0 auto;
-  }
+  } */
   /* media query section */
 @media screen and (max-width:1200px) {
     .footerA p{
@@ -265,9 +274,9 @@ span{
             width: 320%;
             font-size: 22px;
         }
-        #mail{
+        /* #mail{
             font-size: 22px;  
-        }
+        } */
         .footerMedia{
             margin-left: 4rem;
         }
@@ -299,9 +308,9 @@ span{
             font-size: 19px;
             width: 320%;
         }
-        #mail{
+        /* #mail{
             font-size: 19px;
-        }
+        } */
     }
     @media(max-width:576px){
         .nav h2{
