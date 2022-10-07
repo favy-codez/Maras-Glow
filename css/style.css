@@ -70,6 +70,7 @@ header{
 
 .links a:hover{
     color: rgb(79, 95, 81);
+    border-bottom:solid 2px rgb(39,153,52);
 }
 
 #contactButton{
@@ -83,7 +84,7 @@ header{
 #contactButton:hover{
     background-color: rgb(79, 95, 81);
     color:rgb(255, 255, 255);
-    transition: 1s;
+    transition: 0.60s;
 }
 
 /* beginnig of hero section */
@@ -157,6 +158,10 @@ header{
    padding: 16px 20px 40px 20px;
    background-color: #fff;
    border-radius: 20px;
+}
+
+.productOne p{
+    color: rgb(39,153,52);
 }
 
 #productImg{
