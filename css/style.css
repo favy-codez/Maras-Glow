@@ -54,7 +54,6 @@ header{
 
 .links {
     display: flex;
-    width: 360px;
     justify-content: space-between;
 }
 
@@ -260,12 +259,6 @@ span{
     transition: 1s;
   }
 
-  /* #mail{
-    text-decoration: none;
-    color: #000;
-    font-size: 17px;
-    margin:0 auto;
-  } */
   /* media query section */
 @media screen and (max-width:1200px) {
     .footerA p{
