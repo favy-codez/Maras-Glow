@@ -63,14 +63,24 @@ header{
     color: rgb(39,153,52);
     font-size: 16px;
     font-weight: 900;
-    
 }
+
+.links a:hover{
+    color: rgb(79, 95, 81);
+}
+
 #contactButton{
     background-color: rgb(39,153,52);
     color:#fff;
     padding: 8px 10px;
     border-radius: 0 0 10px 0;
     font-size: 14px;
+}
+
+#contactButton:hover{
+    background-color: rgb(79, 95, 81);
+    color:rgb(255, 255, 255);
+    transition: 1s;
 }
 
 /* beginnig of hero section */
