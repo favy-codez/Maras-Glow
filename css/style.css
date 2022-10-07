@@ -154,10 +154,14 @@ header{
 }
 
 .productOne{
-   box-shadow: 7px 7px 7px 7px rgb(230, 230, 230);
+   box-shadow: 2px 2px 2px 2px rgb(230, 230, 230);
    padding: 16px 20px 40px 20px;
    background-color: #fff;
    border-radius: 20px;
+}
+
+.productOne:hover{
+    box-shadow: 7px 7px 7px 7px rgb(230, 230, 230);
 }
 
 .productOne p{
