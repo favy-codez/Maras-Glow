@@ -160,6 +160,11 @@ header{
    border-radius: 20px;
 }
 
+.productTen{
+    margin-top: 1px;
+    font-size: 13px;
+}
+
 .productOne:hover{
     box-shadow: 7px 7px 7px 7px rgb(230, 230, 230);
 }
